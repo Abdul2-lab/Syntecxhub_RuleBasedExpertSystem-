@@ -1,0 +1,56 @@
+{
+  "symptoms": [
+    "fever",
+    "cough",
+    "body_ache",
+    "sneezing",
+    "runny_nose",
+    "itchy_eyes",
+    "shortness_of_breath",
+    "sore_throat"
+  ],
+  "rules": [
+    {
+      "name": "R1",
+      "conditions": ["fever", "cough"],
+      "conclusion": "suspect_flu",
+      "certainty_factor": 0.8,
+      "explanation": "Fever combined with cough is a classic flu indicator."
+    },
+    {
+      "name": "R2",
+      "conditions": ["suspect_flu", "body_ache"],
+      "conclusion": "recommend_rest_and_fluids",
+      "certainty_factor": 0.9,
+      "explanation": "Likely flu plus body ache -> standard rest/fluids advice."
+    },
+    {
+      "name": "R3",
+      "conditions": ["sneezing", "runny_nose", "itchy_eyes"],
+      "conclusion": "suspect_allergy",
+      "certainty_factor": 0.75,
+      "explanation": "This symptom cluster is a classic allergy signature."
+    },
+    {
+      "name": "R4",
+      "conditions": ["suspect_allergy"],
+      "conclusion": "recommend_antihistamine",
+      "certainty_factor": 0.85,
+      "explanation": "Standard first-line suggestion for suspected allergies."
+    },
+    {
+      "name": "R5",
+      "conditions": ["suspect_flu", "shortness_of_breath"],
+      "conclusion": "recommend_see_doctor",
+      "certainty_factor": 0.95,
+      "explanation": "Breathing difficulty alongside flu symptoms warrants medical review."
+    },
+    {
+      "name": "R6",
+      "conditions": ["fever", "sore_throat"],
+      "conclusion": "suspect_infection",
+      "certainty_factor": 0.7,
+      "explanation": "Sore throat with fever suggests a possible infection."
+    }
+  ]
+}
