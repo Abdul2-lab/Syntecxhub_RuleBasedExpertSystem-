@@ -109,9 +109,4 @@ needed:
 To use an entirely different domain (e.g. loan eligibility, device
 troubleshooting), swap in a different rules file: `--rules my_domain.json`.
 
-## Internship submission checklist
 
-- [ ] Push this folder to a GitHub repo named `Syntecxhub_Project_Name`
-      (e.g. `Syntecxhub_RuleBasedExpertSystem`)
-- [ ] Share your internship status on LinkedIn and mention `@Syntecxhub`
-- [ ] Submit the repo link via the official Submission Form
